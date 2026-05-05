@@ -1,0 +1,26 @@
+{
+    "name": "Limiter",
+    "author": "PocketDAW",
+    "version": "1.0.0",
+    "description": "Lookahead brick-wall limiter — instant attack, exponential release, hard ceiling.",
+    "type": "fx",
+    "library": "limiter.so",
+    "params": [
+        { "name": "Thresh",  "default": 0.85, "widget": "knob", "orientation": "radial", "navGroup": "knobs", "navOrder": 0 },
+        { "name": "Ceiling", "default": 0.95, "widget": "knob", "orientation": "radial", "navGroup": "knobs", "navOrder": 1 },
+        { "name": "Release", "default": 0.40, "widget": "knob", "orientation": "radial", "navGroup": "knobs", "navOrder": 2 },
+        { "name": "Lookahd", "default": 0.60, "widget": "knob", "orientation": "radial", "navGroup": "knobs", "navOrder": 3 }
+    ],
+    "presets": [
+        "Master", "Mix Bus", "Drum Bus", "Vocal", "Loud"
+    ],
+    "ui": {
+        "accent": [255, 180, 60],
+        "layout": "knobs",
+        "pages": true,
+        "navGroups": {
+            "knobs": { "layout": "horizontal", "wrap": false }
+        }
+    },
+    "tags": ["limiter", "dynamics", "mastering", "fx"]
+}
